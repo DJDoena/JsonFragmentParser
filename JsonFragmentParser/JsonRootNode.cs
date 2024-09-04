@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace DoenaSoft.JsonFragmemtParser;
+namespace DoenaSoft.JsonFragmentParser;
 
 public sealed class JsonRootNode : JsonNodeBase
 {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace DoenaSoft.JsonFragmemtParser;
+namespace DoenaSoft.JsonFragmentParser;
 
 public static class JsonTreeBuilder
 {

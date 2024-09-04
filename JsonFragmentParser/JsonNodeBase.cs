@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DoenaSoft.JsonFragmemtParser;
+namespace DoenaSoft.JsonFragmentParser;
 
 public abstract class JsonNodeBase : IEnumerable<JsonNode>
 {

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 
-namespace DoenaSoft.JsonFragmemtParser.Tests;
+namespace DoenaSoft.JsonFragmentParser.Tests;
 
 [TestClass]
 public sealed class JsonTreeTests

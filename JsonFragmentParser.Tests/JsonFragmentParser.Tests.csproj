@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<AssemblyName>JsonFragmemtParser.Tests</AssemblyName>
-		<RootNamespace>DoenaSoft.JsonFragmemtParser.Tests</RootNamespace>
+		<AssemblyName>JsonFragmentParser.Tests</AssemblyName>
+		<RootNamespace>DoenaSoft.JsonFragmentParser.Tests</RootNamespace>
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>

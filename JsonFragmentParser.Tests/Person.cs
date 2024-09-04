@@ -1,4 +1,4 @@
-﻿namespace DoenaSoft.JsonFragmemtParser.Tests;
+﻿namespace DoenaSoft.JsonFragmentParser.Tests;
 
 internal sealed class Person
 {

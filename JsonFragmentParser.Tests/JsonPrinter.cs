@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 
-namespace DoenaSoft.JsonFragmemtParser.Tests;
+namespace DoenaSoft.JsonFragmentParser.Tests;
 
 internal static class JsonPrinter
 {

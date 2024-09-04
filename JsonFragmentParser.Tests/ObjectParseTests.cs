@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace DoenaSoft.JsonFragmemtParser.Tests;
+namespace DoenaSoft.JsonFragmentParser.Tests;
 
 [TestClass]
 public sealed class ObjectParseTests

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<AssemblyName>DoenaSoft.JsonFragmemtParser</AssemblyName>
-		<RootNamespace>DoenaSoft.JsonFragmemtParser</RootNamespace>
+		<AssemblyName>DoenaSoft.JsonFragmentParser</AssemblyName>
+		<RootNamespace>DoenaSoft.JsonFragmentParser</RootNamespace>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
