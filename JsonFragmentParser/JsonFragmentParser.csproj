@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>DoenaSoft.JsonFragmemtParser</AssemblyName>
+		<RootNamespace>DoenaSoft.JsonFragmemtParser</RootNamespace>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<LangVersion>12.0</LangVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/DJDoena/DoenaSoft.UnitsOfMeasurement</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DJDoena/DoenaSoft.UnitsOfMeasurement</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>json; parser</PackageTags>
+		<PackageIcon>djdsoft.png</PackageIcon>
+		<Product>JSON Fragment Parser</Product>
+		<Company>Doena Soft.</Company>
+		<Authors>DJ Doena</Authors>
+		<Copyright>2024</Copyright>
+		<Version>1.0.0</Version>
+		<Description>
+			Provides the ability to get a complete chunk of JSON given a valid starting point ("[" or "{") and then transform it into a tree structure that can be navidated.
+		</Description>
+		<PackageIconUrl />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="djdsoft.png" Pack="true" PackagePath="\" />
+		<None Include="..\readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+</Project>
