@@ -10,6 +10,7 @@ public sealed class EndOfJsonParser
     private const char DoubleQuote = '"';
     private const char ClosingBrace = '}';
     private const char ClosingBracket = ']';
+    private const char Backslash = '\\';
 
     private string Source { get; set; }
 
@@ -180,29 +181,26 @@ public sealed class EndOfJsonParser
 
     private bool IsInsideString()
     {
-        if (this.CurrentIndentation == DoubleQuote)
-        {
-            if (this.CurrentChar == DoubleQuote)
-            {
-                var previousChar = this.Source[this.CurrentCharIndex - 1];
-
-                if (previousChar == '\\')
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return true;
-            }
-        }
-        else
+        if (this.CurrentIndentation != DoubleQuote)
         {
             return false;
         }
+        else if (this.CurrentChar != DoubleQuote)
+        {
+            return true;
+        }
+
+        var backslashCount = 0;
+
+        var index = this.CurrentCharIndex - 1;
+
+        while (index >= 0 && this.Source[index] == Backslash)
+        {
+            backslashCount++;
+
+            index--;
+        }
+
+        return (backslashCount % 2) == 1;
     }
 }

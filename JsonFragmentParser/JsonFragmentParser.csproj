@@ -1,12 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<AssemblyName>DoenaSoft.JsonFragmentParser</AssemblyName>
 		<RootNamespace>DoenaSoft.JsonFragmentParser</RootNamespace>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0;net472;net10.0</TargetFrameworks>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<LangVersion>12.0</LangVersion>
+		<LangVersion>latest</LangVersion>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
@@ -18,11 +18,9 @@
 		<Product>JSON Fragment Parser</Product>
 		<Company>Doena Soft.</Company>
 		<Authors>DJ Doena</Authors>
-		<Copyright>2024</Copyright>
-		<Version>1.0.0</Version>
-		<Description>
-			Provides the ability to get a complete chunk of JSON given a valid starting point ("[" or "{") and then transform it into a tree structure that can be navidated.
-		</Description>
+		<Copyright>2024 - 2026</Copyright>
+		<Version>1.0.1</Version>
+		<Description>Extracts complete JSON objects or arrays from the beginning of text, stopping once a valid fragment is found, and parses them into navigable tree structures.</Description>
 		<PackageIconUrl />
 	</PropertyGroup>
 
@@ -32,7 +30,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 	</ItemGroup>
 
 </Project>
